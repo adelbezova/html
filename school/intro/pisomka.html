@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pisomka</title>
+    <meta charset="UTF-8">
+
+    <style>
+        .tabulka,th, td{
+            border: 3px solid black;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 100px;
+            height: 50px;
+
+        }
+
+        td, th{
+            background-color: gainsboro;
+            border: 1px solid black;
+            border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        #obrazok{
+            height: 50%;
+            width: 50%;
+            border: 5px;
+        }
+
+        #obrazok:hover{
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+
+        }
+        #butt1, #butt2{
+            width: 100px;
+            height: 40px;
+            /* background: url("designer-white.jpg"); */ 
+            font-size: 15px;
+            /* background-color: rgb(220, 233, 241); */
+            border: 2px solid white;
+            border-color:black ;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            text-decoration: none;
+        }
+        
+        #butt1:hover, #butt2:hover{
+            background: #ffffff80; /* Farba pozadia s pruhľadnosťou pri hoveri */
+            color: black; /* Farba textu počas hoveru */
+            border: 2px solid black; /* Farba ohraničenia počas hoveru */
+        }
+
+        .stvorcek{
+            background-color: antiquewhite;
+            height: 100px;
+            width: 100px;
+        }
+        
+    </style>
+</head>
+
+
+
+
+<body style="background-color: darkgrey;">
+    <center><h1 style="background-color: antiquewhite;">Vítam Vás na mojej stránke</h1></center>
+
+    <h3 style="color: beige;">MOJA ADRESA:</h3>
+    <div class="stvorcek">
+    <p style="color: darkblue;">Adela Bežová</p>
+    <p style="color: darkblue;">Krásna 13</p>
+    <p style="color: darkblue;">Galanta 12345</p>
+    </div>
+
+    <br>
+    <h3 style="color: beige;">MOJE ZÁĽUBY:</h3>
+    <ol type="I">
+        <li>astronómia</li>
+        <li>programovanie</li>
+        <li>skok s padákom</li>
+    </ol>
+    <br>
+
+    <h3 style="color: beige;">ŠPORTY, O KTORÉ SA ZAUJÍMAM</h3>
+    <ul>
+        <li>hokej</li>
+        <li>lezenie</li>
+        <li>krasokorčuľovanie</li>
+    </ul>
+    <br>
+
+    <h3 style="color: beige;">MOJE OBĽÚBENÉ STRÁNKY</h3>
+    <div><a href="https://stackoverflow.com" id="butt1">stackoverflow</a></div>
+    <div><a href="https://keen-rarely-ladybird.ngrok-free.app" id="butt2">moja stránka</a></div>
+    <br>
+
+    <p>O rok budem maturovať.</p>
+    <p>Takto si predstavujem výsledok mojej maturitnej skúšky:</p>
+    <center><table class="tabulka">
+        <tr align="center">
+            <td>SJL</td>
+            <td>ANJ</td>
+            <td>MAT</td>
+            <td>INF</td>
+        </tr>
+
+        <tr align="center">
+            <td>výborný</td>
+            <td>výborný</td>
+            <td>výborný</td>
+            <td>výborný</td>
+        </tr>
+
+    </table></center>
+    <br>
+
+    <center><h3 style="color: beige;">MOJA BUDÚCA VYSOKÁ ŠKOLA</h3></center>
+    <center><a href="https://www.tudelft.nl/en/"><img src="TU-Delft-Architecture-the-Built-Environment-Scholarships-in-Netherlands-2020.jpg"  id="obrazok"></a></center>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,149 @@
+#celastrana{
+    margin-top: 50px;
+}
+
+body{
+    width: 95%;
+    margin-left: 20px;
+
+}
+
+#hlavicka{
+    background-color: beige;
+    color: black;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#obrazok img{
+    margin-left: auto;
+    max-width: auto;
+    max-height: 200px; 
+    top: 0; /* Pridané, umiestniť hore */
+    right: 0;
+
+}
+
+
+
+.kontakty{
+    float: left;
+    width: 20%;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    /* text-align: center; */
+    
+
+}
+
+#rotator.kontakt{
+    position: absolute;
+    float: right;
+    margin-left: 700px;
+    margin-bottom: 15px;
+    
+}
+
+#rotacia.obrazky
+img
+{
+position: absolute;
+margin-left: 300px;
+margin-top: 50px;
+border: solid 2px black;
+border-radius: 15px;
+}
+ 
+/* #obrazocek{
+    height: 190px;
+}
+#obrazocek2{
+    height: 190px;
+} */
+
+#mail{
+    display: block; /* Upraví odkazy tak, aby mali blokový prúd, ktorý zabezpečuje šírku a výšku, ktorú môžete kontrolovať. */
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mail:hover{
+    background: #ffffff80; /* Farba pozadia s pruhľadnosťou pri hoveri */
+    color: black; /* Farba textu počas hoveru */
+    border: 2px solid black; /* Farba ohraničenia počas hoveru */
+    border-radius: 5px;
+}
+
+
+/* .kontakty:hover{
+    background: #ffffff80; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 15px;
+} */
+
+#menu{
+    background-color: cornflowerblue;
+    color: black;
+    float: left;
+    width: 200px;
+    height: 600px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#polozkymenu
+    p{
+    display: block; /* Upraví odkazy tak, aby mali blokový prúd, ktorý zabezpečuje šírku a výšku, ktorú môžete kontrolovať. */
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px 10px; /* Zjednodušené nastavenie okrajov */
+        
+        
+}
+#polozkymenu a{
+    text-decoration: none;
+    color: black;
+}
+
+#polozkymenu p:hover{
+    background: #ffffff80; /* Farba pozadia s pruhľadnosťou pri hoveri */
+    color: black; /* Farba textu počas hoveru */
+    border: 2px solid black; /* Farba ohraničenia počas hoveru */
+}
+
+#data{
+    background-color: aliceblue;
+    height: 600px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 250px;
+}
+#data h2{
+    text-align: center;
+    margin-top: 0px;
+}

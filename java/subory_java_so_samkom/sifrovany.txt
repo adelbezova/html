@@ -1,0 +1,8 @@
+asortsp 1 a umE ulam am amaM.
+asortsp ja umam am amE alaM.
+umE ulam a umam am sortsP.
+!asortsp 1 a umE ulam am amaM
+asortsp 1 a umE ulam am amaM,
+asortsp ja umam am amE alaM.
+joha,
+?uaac

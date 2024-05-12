@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>uz je to pol roook</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <form method="post" onsubmit="return validateForm()" action="list.html">
+                <div class="input-box">
+                    <input type="text" name="meno" id="meno" placeholder="lubis ma?" required>
+                </div>
+                
+                <div class="input-box">
+                    <input type="password" name="heslo" id="heslo" placeholder="heslo ktore neznasam:" required>
+                </div>
+                
+                <button type="submit" class="button" id="butt1"><3</button>
+            </form>
+        </div>
+
+        <script>
+            function validateForm() {
+                var meno = document.getElementById("meno").value;
+                var heslo = document.getElementById("heslo").value;
+
+                if (meno.trim() === "ano" && heslo.trim() === "314159265") {
+                    return true;  // Submit the form
+                } else {
+                    alert("haha zle");
+                    return false;  // Stop form submission
+                }
+            }
+        </script>
+    </body>
+</html>

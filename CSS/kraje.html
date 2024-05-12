@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>zaciatky css</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script rel="text/javascript" src="Javascript/jquery-1.9.1.min.js"></script>
+    <script rel="text/javascript" src="Javascript/rotate.js"></script>
+</head>
+
+<body>
+    <div id="celastrana">
+        <div id="hlavicka">
+            <div class="kontakty">
+                <p>adela</p>
+                <p>sturak</p>
+                <p>iii.b</p>
+                <a href = "mailto: abc@example.com" id ="mail">Send Email</a>
+            </div>
+
+            <!-- <div id="obrazok">
+                <img src="kvietky.jpg">
+            </div> -->
+
+            <div id="rotator" class="kontakt">
+                <img src="obrazky/Snímka obrazovky 2023-09-27 o 19.45.48 - kópia.png">
+                <img src="obrazky/Snímka obrazovky 2023-10-17 o 21.58.39.png">
+
+            </div>
+        </div>
+
+        <div id="menu">
+            <div id="polozkymenu">
+                <p><a href="intro.html" title="odkaznaprvu">domov</a></p>
+                <p><a href="kraje.html" title="odkaznakraje">kraje</a></p>
+                <p><a href="odrazky.html" title="odkaznaodrazky">odrazky</a></p>
+                
+
+            </div>
+        </div>
+
+    <div id ="data">
+        <h2>kraje</h2>
+        <ol style="color: seagreen;">
+            <li>TRENCIANSKY</li>
+            <ul style="color:midnightblue">
+                <li>trencin</li>
+                <li>ilava</li>
+                <li>puchov</li>
+            </ul>
+    
+            <li>ZILINSKY</li>
+            <ul style="color:midnightblue">
+                <li>zilina</li>
+                <li>martin</li>
+                <li>cadca</li>
+            </ul>
+    
+            <li>NITRIANSKY</li>
+            <ul  style="color:midnightblue">
+                <li>nitra</li>
+                <li>levoca</li>
+                <li>nove zamky</li>
+            </ul>
+    
+        </ol>
+
+    </div>
+
+        <div id="pata">
+            <span style="float: left">
+                <script language="javascript" type="text/javascript">
+                    var datum = new Date()
+                    var den = datum.getDate()
+                    var mesiac = datum.getMonth() +1
+                    var rok = datum.getFullYear()
+
+                    document.write(den + "." + mesiac+ "."+ rok)
+                </script>
+            </span>
+            <span style="float: right;">
+                <a>by adell</a>
+            </span>
+
+        </div>
+    <script type="text/javascript">
+        $(window).load(function(){
+            startRotator("#rotator");
+        })
+
+    </script>
+        
+    </div>
+
+
+
+
+</body>
+
+
+</html>

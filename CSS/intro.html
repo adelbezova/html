@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>zaciatky css</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script rel="text/javascript" src="Javascript/jquery-1.9.1.min.js"></script>
+    <script rel="text/javascript" src="Javascript/rotate.js"></script>
+</head>
+
+<body>
+    <div id="celastrana">
+        <div id="hlavicka">
+            <div class="kontakty">
+                <p>adela</p>
+                <p>sturak</p>
+                <p>iii.b</p>
+                <a href = "mailto: abc@example.com" id ="mail">Send Email</a>
+            </div>
+
+            <!-- <div id="obrazok">
+                <img src="kvietky.jpg">
+            </div> -->
+
+            <div id="rotator" class="kontakt">
+                <img src="obrazky/Snímka obrazovky 2023-09-27 o 19.45.48 - kópia.png">
+                <img src="obrazky/Snímka obrazovky 2023-10-17 o 21.58.39.png">
+
+            </div>
+        </div>
+
+        <div id="menu">
+            <div id="polozkymenu">
+                <p><a href="intro.html" title="odkaznaprvu">domov</a></p>
+                <p><a href="kraje.html" title="odkaznakraje">kraje</a></p>
+                <p><a href="odrazky.html" title="odkaznaodrazky">odrazky</a></p>
+                
+
+            </div>
+        </div>
+
+    <div id ="data">
+        <h2>domov</h2>
+        <ul>
+            <li>this is normal text</li>
+            <li>this is <b>bold</b> text</li>
+            <li>this is <i>italic</i> text</li>
+            <li>this is <big>big</big> text</li>
+            <li>this is <small>small</small> text</li>
+            <li>this is <sub>subscript</sub> text</li>
+            <li>this is <sup>superscript</sup> text</li>
+            <li>this is <del> deleted</del> text</li>
+            <li>this is <ind>inserted</ind> text</li>
+            <li>this is <mark style="background-color: pink;">marked</mark> text</li>
+        </ul>
+        
+        
+    
+    
+        <h1>toto je nadpis h1 urvne</h1>
+        <h3>toto je nadpis h3 urovne</h3>
+    
+    
+    
+        </div>
+
+        <div id="pata">
+            <span style="float: left">
+                <script language="javascript" type="text/javascript">
+                    var datum = new Date()
+                    var den = datum.getDate()
+                    var mesiac = datum.getMonth() +1
+                    var rok = datum.getFullYear()
+
+                    document.write(den + "." + mesiac+ "."+ rok)
+                </script>
+            </span>
+            <span style="float: right;">
+                <a>by adell</a>
+            </span>
+
+        </div>
+    <script type="text/javascript">
+        $(window).load(function(){
+            startRotator("#rotator");
+        })
+
+    </script>
+        
+    </div>
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(soft\ background_.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.pasik{
+    background-color: #FEF6F9;
+    height: 250vh; /* Use 100vh for 100% of the viewport height */
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333; /* Barva textu */
+    padding: 20px; /* Odsazení textu od okraje pasíku */
+    text-align: justify;
+    white-space: pre-wrap;
+    margin-left: 0;
+
+}
+
