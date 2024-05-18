@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rocnikovy projekt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3cafc4ed14.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+</head>
+<body>
+    <section class="header">
+        <nav >
+            <a href="https://keen-rarely-ladybird.ngrok-free.app"><img src="eduford_img/Snímka_obrazovky_2024-02-18_o_16.01.30-removebg-preview - kópia.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="bezpecnostny_projekt.html">BEZPECNOSTNY PROJEKT</a></li>
+                    <li><a href="yaranitelnosti.html">ZRANITEĽNOSTI A ÚTOKY</a></li>
+                    <li><a href="ochrana_dat.html">OCHRANA DAT</a></li>
+                    <li><a href="kontakt.html">ZDROJE</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" style="cursor: pointer;"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Bezpecnost na internete</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa cum doloribus unde fugiat nostrum blanditiis.<br>Enim autem delectus quas rem beatae, laboriosam, minima suscipit nostrum consequuntur, voluptatibus neque cumque officiis!</p>
+            <button href="" class="hero-btn" onclick="scrollToSection()">chcem vediet viac</button>
+
+        </div>
+
+    </section>
+
+    <!-- ----ciele pb---- -->
+    <section class="course" id="course">
+        <h1>Ciele pocitacovej bezpecnosti</h1>
+        <p>V dôsledku nedostatočného zabezpečenia pri spracovaní informácií vznikajú ročne škody za miliardy dolárov. Na dosiahnutie počítašovej beypečnosti by sme mali najprv zaoberať tromi základnými cieľmi ochrany informačnej bezpečnosti:</p>
+        
+        <div class="row">
+            <div class="curse-col">
+                <h3>Dôvernosť</h3>
+                <p>Cieľom je chrániť dôverné údaje pred neoprávneným prístupom. Dôvodom môže byť zákon o ochrane údajov, ochodné tajomstvo či naša túžba po zachovaní súkromia a kontrolou nad informáciami o nás.Dôvernosť informácií a citlivých údajov je preto zabezpečená, ak k nim majú prístup len tie osoby, ktoré sú na to autorizované. Prístup znamená napríklad čítanie, pozmenenie alebo dokonca vymazanie dát.</p>
+                <p>Prijaté opatrenia preto musia zabezpečiť, aby k dôverným informáciám mali prístup len oprávnené osoby a pre tie je potrebné špecifikovať typ prístupu. Musí sa zabezpečiť, aby nemohli robiť to, čo nemajú povolené.</p>
+            </div>
+
+            <div class="curse-col">
+                <h3>Integrita</h3>
+                <p>Termín integrita sa spája s požiadavkami:</p>
+
+                <div class="curse-ol-ul">
+                    <ul>
+                    <li >Neúmyselné zmeny musia byť nemožné (vysoká integrita) alebo aspoň vysledovateľné a zistiteľné (nízka integrita).</li>
+                    <p></p>
+                    <li>Zaručiteľná spoľahlivosť systémov a úplnosť dát</li>
+                </ul></div>
+                <p>Opatrenia zamerané na zvýšenie integrity informácií sa preto zameriavajú aj na problematiku autorizácie prístupu v spojení s ochranou proti vonkajším a vnútorným útokom.</p>
+
+            </div>
+
+            <div class="curse-col">
+                <h3>Dostupnosť</h3>
+                <p>Dostupnosť informácií je kritická, zabezpečuje, že oprávnené osoby majú kedykoľvek prístup k požadovaným informáciám a systémom. Ak systém zlyhá alebo budova nie je prístupná, požadované informácie nemusia byť k dispozícii. V určitých prípadoch to môže viesť k poruchám s ďalekosiahlymi dôsledkami. </p>
+                <p>Preto je dôležité vykonať analýzu rizík, zohľadňujúcu pravdepodobnosť zlyhania systému, jeho trvanie a potenciálne škody vyplývajúce z nedostatočného zabezpečenia IT. Na základe týchto výsledkov je možné prijať účinné protiopatrenia a vykonať ich, ak sa vyskytne najhorší scenár.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ----strata dat------->
+    
+
+
+    <section class="campus">
+        <h1>Strata dát</h1>
+        <p>Graf zobrayuje percentuálne zastúpenie príčin straty dát</p>
+
+        <div class="graph-container" id="graph-container">
+            <canvas id="myChart"></canvas>
+            
+        </div>
+        <script>
+            const data = {
+                labels: ['Zlihanie hardweru', 'Ľudský faktor', 'Problémy softwéru', 'Vírusy a malvéry', 'Prírodný faktor',],
+                datasets: [{
+                    label: '',
+                    data: [44, 32, 14, 7, 3],
+                    backgroundColor: [
+                        'rgb(8,159,172)',
+                        'rgb(6,124,135)',
+                        'rgb(4,89,97)',
+                        'rgb(2,54,59)',
+                        'rgb(1,30,30)',
+                    ],
+                    hoverOffset: 3
+                }]
+            };
+        
+            const config = {
+                type: 'pie',
+                data: data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    var label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    label += context.parsed + '%' 
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+        
+            const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+            );
+        
+            window.addEventListener('scroll', function() {
+                const element = document.getElementById('graph-container');
+                const position = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+        
+                if (position.top < windowHeight / 2 && position.bottom > windowHeight / 2) {
+                    element.classList.add('show');
+                }
+            });
+        </script>
+        
+
+        <div class="row">
+
+            <div class="campus-rol">
+                <img src="7f4a3c0a773c8e4a428eecc4d6989ccc.jpg">
+                <div class="layer">
+                    <h3>ZLIHANIE  HARDWÉRU</h3>
+                    <li>výpadky prúdu</li>
+                    <li>prehriatia zariadení</li>
+                    <li>poruchy a poškodenia pevných diskov</li>
+
+                </div>
+            </div>
+
+            <div class="campus-rol">
+                <img src="de848d53831af08e14f98c9740596838.jpg">
+                <div class="layer">
+                    <h3>ĽUDSKÝ <br> FAKTOR</h3>
+                    <li>vymazanie dát omylom</li>
+                    <li>zlé preformátovanie pevného disku</li>
+                    <li>ppoškodenie zariadení</li>
+                    <li>únik hesiel</li>
+                    <li>žiadna záloha</li>
+
+                </div>
+            </div>
+
+            <div class="campus-rol">
+                <img src="bc6a3b5c33c0b875f91006eb55f09bdd.jpg">
+                <div class="layer">
+                    <h3>PROBLÉMY SO SOFTWÉROM</h3>
+                    <li>zamrznutie softwéru</li>
+                    <li>chyby</li>
+                    <li>neočakavané kolapsy</li>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row2">
+
+            <div class="campus-rol">
+                <img src="225f65f0bf47bc957c1d84a9c8e5205b-1.jpg" >
+                <div class="layer">
+                    <h3>MALVÉRY A VÍRUSY</h3>
+                    <li>stiahnutie z internetu</li>
+                    
+                </div>
+            </div>
+
+            <div class="campus-rol">
+                <img src="ca53db024dea66ec3908ad58d9432df6.jpg">
+                <div class="layer">
+                    <h3>PRÍRODNÝ FAKTOR</h3>
+                    <li>potopy</li>
+                    <li>požiare</li>
+                    <li>zemetrasenia</li>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ////facilities///// -->
+    <section class="facilities">
+        <h1>Priciny</h1>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+
+        <div class="row">
+            <div class="facil-col">
+                <img src="eduford_img/library.png">
+                <h3>library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur consectetur atque expedita, nihil nisi maxime quaerat amet maiores. Assumenda rerum excepturi reprehenderit iusto iure velit suscipit deserunt! Ipsum, dolores odit.</p>
+            </div>
+
+            <div class="facil-col">
+                <img src="eduford_img/basketball.png">
+                <h3>basketball</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur consectetur atque expedita, nihil nisi maxime quaerat amet maiores. Assumenda rerum excepturi reprehenderit iusto iure velit suscipit deserunt! Ipsum, dolores odit.</p>
+            </div>
+
+            <div class="facil-col">
+                <img src="eduford_img/cafeteria.png">
+                <h3>cafeteria</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur consectetur atque expedita, nihil nisi maxime quaerat amet maiores. Assumenda rerum excepturi reprehenderit iusto iure velit suscipit deserunt! Ipsum, dolores odit.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ------testemonial---- -->
+    <section class="test">
+        <h1>Odborníci povedali</h1>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+
+        <div class="row">
+            <div class="test-rol">
+                <img src="steph.png">
+                <div>
+                    <p>"Na vybudovanie reputácie je potrebných 20 rokov a len pár minút cyber-incidentu ju môže zničiť."</p>
+                    <h3>Stephane Nappo, Vice president CISO</h3>
+                </div>
+            </div>
+
+            <div class="test-rol">
+                <img src="john.jpg">
+                <div>
+                    <p>"Existujú len dva typy organizácií: Tie, ktoré boli hacknuté, a tie, ktoré o tom ešte nevedia!"</p>
+                    <h3>John Chambers, CISCO CEO</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------footer---- -->
+    <section class="footer">
+        <h4>About me</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Modi illo voluptas voluptates voluptatem impedit exercitationem esse suscipit earum odio, repellendus rerum non distinctio ipsa expedita labore vitae sequi porro animi.
+        </p>
+        <div class="icon">
+            <a href="https://www.facebook.com/adel.bezova/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/adelle42862389"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adela_bezova/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adela-bezova-085b4b286/"><i class="fa-brands fa-linkedin-in"></i></a>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- ------JavaScript for menu----- -->
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showMenu(){
+            navlinks.style.right = "0"
+        }
+        function hideMenu(){
+            navlinks.style.right = "-300px";
+        }
+
+        function scrollToSection() {
+            var section = document.getElementById("course");
+            var targetY = section.getBoundingClientRect().top + window.pageYOffset;
+            var startingY = window.pageYOffset;
+            var distance = targetY - startingY;
+            var duration = 1000; // časový interval v milisekundách
+            var startTime;
+
+            function ease(t) {
+                return t<.5 ? 2*t*t : -1+(4-2*t)*t; // v tomto prípade používame ease-in-out funkciu
+            }
+
+            function scroll(timestamp) {
+                startTime = startTime || timestamp;
+                var elapsed = timestamp - startTime;
+                var progress = ease(Math.min(elapsed / duration, 1));
+                window.scrollTo(0, startingY + distance * progress);
+                if (elapsed < duration) {
+                    requestAnimationFrame(scroll);
+                }
+            }
+
+            requestAnimationFrame(scroll);
+        }
+    </script>
+
+    <!-- cript for the graph -->
+    
+</body>
+</html>

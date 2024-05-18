@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rocnikovy projekt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3cafc4ed14.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+</head>
+<body>
+    <section class="header">
+        <nav >
+            <a href="https://keen-rarely-ladybird.ngrok-free.app"><img src="eduford_img/Snímka_obrazovky_2024-02-18_o_16.01.30-removebg-preview - kópia.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">BEZPECNOSTNY PROJEKT</a></li>
+                    <li><a href="">STRATA DAT</a></li>
+                    <li><a href="">OCHRANA DAT</a></li>
+                    <li><a href="">ZDROJE</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    
+
+    <!-- ------footer---- -->
+    <section class="footer">
+        <h4>About me</h4>
+        <p>Som studentka GLSTN odboru informatika<br>
+        </p>
+        <div class="icon">
+            <a href="https://www.facebook.com/adel.bezova/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/adelle42862389"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adela_bezova/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adela-bezova-085b4b286/"><i class="fa-brands fa-linkedin-in"></i></a>
+
+        </div>
+
+    </section>
+
+
+
+    
+
+
+
+
+
+
+
+    <!-- ------JavaScript for menu----- -->
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showMenu(){
+            navlinks.style.right = "0"
+        }
+        function hideMenu(){
+            navlinks.style.right = "-300px";
+        }
+
+        function scrollToSection() {
+            var section = document.getElementById("course");
+            var targetY = section.getBoundingClientRect().top + window.pageYOffset;
+            var startingY = window.pageYOffset;
+            var distance = targetY - startingY;
+            var duration = 1000; // časový interval v milisekundách
+            var startTime;
+
+            function ease(t) {
+                return t<.5 ? 2*t*t : -1+(4-2*t)*t; // v tomto prípade používame ease-in-out funkciu
+            }
+
+            function scroll(timestamp) {
+                startTime = startTime || timestamp;
+                var elapsed = timestamp - startTime;
+                var progress = ease(Math.min(elapsed / duration, 1));
+                window.scrollTo(0, startingY + distance * progress);
+                if (elapsed < duration) {
+                    requestAnimationFrame(scroll);
+                }
+            }
+
+            requestAnimationFrame(scroll);
+        }
+    </script>
+
+    <!-- cript for the graph -->
+    
+</body>
+</html>
