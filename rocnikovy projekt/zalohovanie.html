@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rocnikovy projekt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3cafc4ed14.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+</head>
+<body>
+    
+    <section class="headerBP">
+        <nav >
+            <a href="https://keen-rarely-ladybird.ngrok-free.app"><img src="eduford_img/Snímka_obrazovky_2024-02-18_o_16.01.30-removebg-preview - kópia.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="bezpecnostny_projekt.html">BEZPEČNOSTNÝ PROJEKT</a></li>
+                    <li><a href="zalohovanie.html">ZÁLOHOVANIE DÁT</a></li>
+                    <li><a href="ochrana_dat.html">NAPADNUTIA</a></li>
+                    <li><a href="kontakt.html">ZDROJE</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" style="cursor: pointer;"></i>
+        </nav>
+    </section>
+
+    
+
+    <div class="text-box">
+        <p style="font-size: 50px; padding-bottom: 25%; font-weight: 600;">Zálohovanie dát</p>
+        
+    </div>
+
+    <div class="text-zal">
+        <p>Záloha alebo aj "back-up" je kópia dát, ktorá sa tvorí na inom mieste ako je náš počítač a následne sa môže použiť na rýchle obnovenie stratených informácií.</p>
+        <p>Zálohivanie možme vykonávať manuálne alebo ho mať nastavené automaticky. </p>
+        <p>Vďaka "back-upu" sme chránený voči náhodnej strate užívateľských dát, zničeniu databáz alebo poškodeniu hardwéru. Ak by došlo k týmto prípadom vieme dáta obnoviť no nie vždy. Pri niektorých rozsiahlých živelných pohromách môžu byť zničené aj álohovaie zariadenia.</p>
+    </div>
+
+    <div class="text-zal"><h1>Metódy zálohovania</h1></div>
+    
+    <section class="metodyZAL" id="metodyZAL">
+        
+
+        
+
+        <div class="mySlides">
+            <div class="slider">
+
+                <span class="butt-left" onclick="plusDivs(-1)"><b>&#10094;</b></span>
+                <span class="butt-right" onclick="plusDivs(+1)"><b>&#10095;</b></span>
+
+                <div class="slider2">
+                    <h3>PLNÁ ZÁLOHA</h3>
+                    <ul class="ulZAL">
+                        <li>pri každom zálohovaní vytvorí úplnú a novú kópiu všetkých dát</li>
+                        <li>náročná na úložné miesto</li>
+                        <li>jednoduché spätné obnovenie dát</li>
+                    </ul>
+                </div>
+              
+            </div>
+
+        </div>
+
+          <div class="mySlides">
+            <div class="slider">
+                <span class="butt-left" onclick="plusDivs(-1)"><b>&#10094;</b></span>
+                <span class="butt-right" onclick="plusDivs(+1)"><b>&#10095;</b></span>
+
+                <div class="slider2">
+                    <h3>PRÍRASTKOVÁ ZÁLOHA</h3>
+                    <ul class="ulZAL">
+                        <li>prvýkrát je potrebná plná záloha a pri každom zálohovaní sa vytvorí len záloha zmenených dát</li>
+                        <li>šetrí miesto na disku</li>
+                        <li>je náročnejšia pri obnovovaní -treba obnoviť zo všetkých záloh</li>
+                        <li>Typy systémov na prírastkovú zálohu -jednoduchšie -uložia celý zmenený súbor a komplexnejšie - zálohujú len zmenené časti súboru</li>
+
+                    </ul>
+
+                    
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="slider">
+                <span class="butt-left" onclick="plusDivs(-1)"><b>&#10094;</b></span>
+                <span class="butt-right" onclick="plusDivs(+1)"><b>&#10095;</b></span>
+
+                <div class="slider2">
+                    <h3>KOMBINOVANÁ ZÁLOHA</h3>
+                    <ul>
+                        <li>pravidelná kombinácia prírastkovej a plnej zálohy</li>
+                        <li>zaberá viac miesta ako prírastková ale menej ako plná</li>
+                        <li>menej náročná na obnovu -stačí obnoviť poslednú plnú zálohu a zmeny vykonaná od nej</li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="slider">
+                <span class="butt-left" onclick="plusDivs(-1)"><b>&#10094;</b></span>
+                <span class="butt-right" onclick="plusDivs(+1)"><b>&#10095;</b></span>
+                <div class="slider2">
+                    <h3>ROZDIELOVÁ ZÁLOHA</h3>
+                    <ul>
+                        <li>k prvotnej plnej zálohe sa dozálohováva rozdiel oproti poslednej plnej zálohe</li>
+                        <li>šetrí miesto na disku</li>
+                        <li>jednoduchá na obnovu -obnovenie poslednej plnej a poslednej rozdielovej zálohy</li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="slider">
+                <span class="butt-left" onclick="plusDivs(-1)"><b>&#10094;</b></span>
+                <span class="butt-right" onclick="plusDivs(+1)"><b>&#10095;</b></span>
+                <div class="slider2">
+                    <h3>DEDUPLIKAČNÁ ZÁLOHA</h3>
+                    <ul>
+                        <li>podobá sa na kombinovanú -interný zálohovací systém kombinuje plnú a prírastkovú zálohu ale tak že "pridáva" dáta k plnej</li>
+                        <li>šetrí miesto na disku</li>
+                        <li>jednoduchá na obnovu, pretože každá záloha je obdobou úplnej</li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
+
+    </section>
+
+    <section class="meida" id="meida">
+        <h1>Médiá na zálohovanie</h1>
+        <div class="ZALrows">
+            <div class="medium">
+                <img src="hdd.jpg">
+                <h3>HDD DISK</h3>
+            </div>
+
+            <div class="medium" >
+                <h3>HDD DISK</h3>
+            </div>
+
+            <div class="medium">
+                <h3>HDD DISK</h3>
+            </div>
+
+            <div class="medium">
+                <h3>HDD DISK</h3>
+            </div>
+        </div>  
+
+    </section>
+
+
+    
+
+    <!-- ------footer---- -->
+    <section class="footer">
+        <h4>O mne</h4>
+        <p>Volám sa Adela Bežová, som študentka GĽŠTN a túto stránku som vytvorila v rámci ročníkového projektu z informatiky.</p>
+        <p>máj 2024</p>
+        <div class="icon">
+            <a href="https://www.facebook.com/adel.bezova/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/adelle42862389" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adela_bezova/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adela-bezova-085b4b286/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/adelbezova/" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+
+    </section>
+
+
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showMenu(){
+            navlinks.style.right = "0"
+        }
+        function hideMenu(){
+            navlinks.style.right = "-300px";
+        }
+
+        function scrollToSection() {
+            var section = document.getElementById("course");
+            var targetY = section.getBoundingClientRect().top + window.pageYOffset;
+            var startingY = window.pageYOffset;
+            var distance = targetY - startingY;
+            var duration = 1000; // časový interval v milisekundách
+            var startTime;
+
+            function ease(t) {
+                return t<.5 ? 2*t*t : -1+(4-2*t)*t; // v tomto prípade používame ease-in-out funkciu
+            }
+
+            function scroll(timestamp) {
+                startTime = startTime || timestamp;
+                var elapsed = timestamp - startTime;
+                var progress = ease(Math.min(elapsed / duration, 1));
+                window.scrollTo(0, startingY + distance * progress);
+                if (elapsed < duration) {
+                    requestAnimationFrame(scroll);
+                }
+            }
+
+            requestAnimationFrame(scroll);
+        }
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

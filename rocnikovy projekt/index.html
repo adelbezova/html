@@ -22,9 +22,9 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="bezpecnostny_projekt.html">BEZPECNOSTNY PROJEKT</a></li>
-                    <li><a href="">STRATA DAT</a></li>
-                    <li><a href="ochrana_dat.html">OCHRANA DAT</a></li>
+                    <li><a href="bezpecnostny_projekt.html">BEZPEČNOSTNÝ PROJEKT</a></li>
+                    <li><a href="zalohovanie.html">ZÁLOHOVANIE DÁT</a></li>
+                    <li><a href="ochrana_dat.html">NAPADNUTIA</a></li>
                     <li><a href="kontakt.html">ZDROJE</a></li>
                 </ul>
 
@@ -33,18 +33,34 @@
         </nav>
 
         <div class="text-box">
-            <h1>Bezpecnost na internete</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa cum doloribus unde fugiat nostrum blanditiis.<br>Enim autem delectus quas rem beatae, laboriosam, minima suscipit nostrum consequuntur, voluptatibus neque cumque officiis!</p>
-            <button href="" class="hero-btn" onclick="scrollToSection()">chcem vediet viac</button>
+            <h1>Počítačová bezpečnosť</h1>
+            <p>Počítačová bezpečnosť je oblasť vedy o počítačoch, ktorá sa zaobera odhaľovaním rizík spojených s používaním počítačov ale aj bezpečným ukladaním dát, ich ochranou, bezpečnú komunikáciu a mnoho iného</p>
+            <button href="" class="hero-btn" onclick="scrollToSection()">chcem vedie viac</button>
 
         </div>
 
     </section>
 
+    <!-- koncepcia pc bezpecnosti -->
+    <section class="concept" id="concept">
+        <h1>Koncepcia počítačovej bezpečnosti</h1>
+        <p></p>
+        <div class="concept-ol-ul">
+            <ul>
+            <li >PREVENCIA - ochrana a príprava na možné hrozby pred tým než nastanú </li>
+            <p></p>
+            <li>DETEKCIA - odhalovanie slabých miest v našom systéme a neoprávnenej činosti</li>
+            <p></p>
+            <li>NÁPRAVA - odstránenie slabého miesta, obnovenie dát</li>
+        </ul></div>
+
+
+    </section>
+
     <!-- ----ciele pb---- -->
     <section class="course" id="course">
-        <h1>Ciele pocitacovej bezpecnosti</h1>
-        <p>V dôsledku nedostatočného zabezpečenia pri spracovaní informácií vznikajú ročne škody za miliardy dolárov. Na dosiahnutie počítašovej beypečnosti by sme mali najprv zaoberať tromi základnými cieľmi ochrany informačnej bezpečnosti:</p>
+        <h1>Ciele počítačovej bezpečnosti</h1>
+        <p>V dôsledku nedostatočného zabezpečenia pri spracovaní informácií vznikajú ročne škody za miliardy dolárov. Na dosiahnutie počítačovej bezpečnosti by sme mali najprv zaoberať tromi základnými cieľmi ochrany informačnej bezpečnosti:</p>
         
         <div class="row">
             <div class="curse-col">
@@ -83,7 +99,7 @@
 
     <section class="campus">
         <h1>Strata dát</h1>
-        <p>Graf zobrayuje percentuálne zastúpenie príčin straty dát</p>
+        <p>Graf zobrazuje percentuálne zastúpenie troch najčastejsích príčin straty dát</p>
 
         <div class="graph-container" id="graph-container">
             <canvas id="myChart"></canvas>
@@ -91,15 +107,15 @@
         </div>
         <script>
             const data = {
-                labels: ['Zlihanie hardweru', 'Ľudský faktor', 'Problémy softwéru', 'Vírusy a malvéry', 'Prírodný faktor',],
+                labels: ['Ľudský faktor',  'Prírodný faktor',"Technický faktor"],
                 datasets: [{
                     label: '',
-                    data: [44, 32, 14, 7, 3],
+                    data: [85, 8, 7],
                     backgroundColor: [
                         'rgb(8,159,172)',
-                        'rgb(6,124,135)',
+                        // 'rgb(6,124,135)',
                         'rgb(4,89,97)',
-                        'rgb(2,54,59)',
+                        // 'rgb(2,54,59)',
                         'rgb(1,30,30)',
                     ],
                     hoverOffset: 3
@@ -152,10 +168,13 @@
             <div class="campus-rol">
                 <img src="7f4a3c0a773c8e4a428eecc4d6989ccc.jpg">
                 <div class="layer">
-                    <h3>ZLIHANIE  HARDWÉRU</h3>
+                    <h3>TECHNICKÝ FAKTOR</h3>
                     <li>výpadky prúdu</li>
                     <li>prehriatia zariadení</li>
                     <li>poruchy a poškodenia pevných diskov</li>
+                    <li>chyby softwéru</li>
+                    <li>únava alebo poškodenie hardwéru</li>
+                    <li>preťaženie systému</li>
 
                 </div>
             </div>
@@ -169,95 +188,112 @@
                     <li>ppoškodenie zariadení</li>
                     <li>únik hesiel</li>
                     <li>žiadna záloha</li>
+                    <li>útoky vírusov</li>
+                    <li>krádež a následné zneužitie dát</li>
+                    <li>cielený útok alebo sabotáž</li>
 
-                </div>
-            </div>
-
-            <div class="campus-rol">
-                <img src="bc6a3b5c33c0b875f91006eb55f09bdd.jpg">
-                <div class="layer">
-                    <h3>PROBLÉMY SO SOFTWÉROM</h3>
-                    <li>zamrznutie softwéru</li>
-                    <li>chyby</li>
-                    <li>neočakavané kolapsy</li>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row2">
-
-            <div class="campus-rol">
-                <img src="225f65f0bf47bc957c1d84a9c8e5205b-1.jpg" >
-                <div class="layer">
-                    <h3>MALVÉRY A VÍRUSY</h3>
-                    <li>stiahnutie z internetu</li>
-                    
                 </div>
             </div>
 
             <div class="campus-rol">
                 <img src="ca53db024dea66ec3908ad58d9432df6.jpg">
                 <div class="layer">
-                    <h3>PRÍRODNÝ FAKTOR</h3>
-                    <li>potopy</li>
+                    <h3>PRíRODNÝ FAKTOR</h3>
+                    <li>búrky</li>
+                    <li>povodne</li>
                     <li>požiare</li>
-                    <li>zemetrasenia</li>
 
                 </div>
             </div>
-
         </div>
+
+        <div class="njacastejsie">
+            <p></p>
+            <p></p>
+            <h3>Najčastejšie dôvody straty dát:</h3>
+            <ol>
+                <li>zmazanie súboru alebo e-mailu omylom alebo činnosťou počítačového vírusu</li>
+                <li>strata časti alebo všetkých dát na jednom popčítači v dôsledku útoku vírusu</li>
+                <li>poškodenie hardwéru- pád, oblissatie tekutinou, teplotné extrémy</li>
+                <li>zlyhanie pevného disku</li>
+                <li>spálena elektronika v komponentoch zariadenia alebo v pevnom disku</li>
+                <li>zničenie dát alebo poškodenie hardwéru vinou prírodnej katastrofy</li>
+            </ol>
+        </div>
+
+        
 
     </section>
 
     <!-- ////facilities///// -->
     <section class="facilities">
-        <h1>Priciny</h1>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <h1>Ochrana pred stratou dát</h1>
+        <p>Pred najčastejšími príčinami straty dát sa dá v mnohých pripadoch účinne brániť a pokiaľ už strata dát nastane netreba zúfať. V 90% prípadov sa dá spätne dostať k dátam a je mnoho firiem, ktoré sa zaoberajú práve tejto problematike a dokážu pomocť.</p>
 
         <div class="row">
             <div class="facil-col">
-                <img src="eduford_img/library.png">
-                <h3>library</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur consectetur atque expedita, nihil nisi maxime quaerat amet maiores. Assumenda rerum excepturi reprehenderit iusto iure velit suscipit deserunt! Ipsum, dolores odit.</p>
+                <!-- <img src="eduford_img/library.png"> -->
+                <h3>Ochrana pred napadnutím počítača</h3>
+                <ul>
+                    <li>nastavnie BIOS hesla</li>
+                    <li>silné heslo do operačného systému alebo overenie pomocou biometrie alebo čipu</li>
+                    <li>politika hesiel vo firmách - dĺžka a rôzne znaky v hesle</li>
+                    <li>uzamknutie obrazovky šetričom</li>
+                    <li>šifrovanie údajov na disku</li>
+                    <li>firewall, antivírusové programy a šifrovaný prenos dát</li>
+                    <li>dodržiavanie bezpečnostných protokolov </li>
+
             </div>
 
             <div class="facil-col">
-                <img src="eduford_img/basketball.png">
-                <h3>basketball</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur consectetur atque expedita, nihil nisi maxime quaerat amet maiores. Assumenda rerum excepturi reprehenderit iusto iure velit suscipit deserunt! Ipsum, dolores odit.</p>
+                <!-- <img src="eduford_img/basketball.png"> -->
+                <h3>Ochrana voči nehodám</h3>
+                <ul>
+                    <li>obmedzenie práv používateľov</li>
+                    <li>používanie systémov s možnosťou vratných transakcií</li>
+                    <li>zálohovanie kľúčových súborov a systémov</li>
+                    <li>aktualizácia operačného systému</li>
+                    <li>nenavštevovať potenciálne nebezpečné stránky</li>
+                    <li>dať si pozor čo sťahujem a otváram na počítači</li>
+                    <li>protipožiarna ochrana</li>
+                    <li>bleskopoistky</li>
+                </ul>
             </div>
 
             <div class="facil-col">
-                <img src="eduford_img/cafeteria.png">
-                <h3>cafeteria</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur consectetur atque expedita, nihil nisi maxime quaerat amet maiores. Assumenda rerum excepturi reprehenderit iusto iure velit suscipit deserunt! Ipsum, dolores odit.</p>
+                <!-- <img src="eduford_img/cafeteria.png"> -->
+                <h3>ochrana voči technickým poruchám</h3>
+                <ul>
+                    <li>zrkadlenie a klastrovnia systémov</li>
+                    <li>záložne droje a generátory elektrickej enegrie</li>
+                    <li>používanie prepäťovej ochrany</li>
+                    <li>chladiace systémy</li>
+                    <li>zdroje záložného napájania - UPS</li>
+                    <li>odolnosť proti byzantským poruchám</li>
+
+                </ul>
             </div>
         </div>
-
-    </section>
-
 
     <!-- ------testemonial---- -->
     <section class="test">
         <h1>CEO's povedali</h1>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Ochrana dát je vo svete IT veľmi dôležitá a ľuďom to často pripomínajú aj odborníci z tohto sektoru</p>
 
         <div class="row">
             <div class="test-rol">
-                <img src="eduford_img/user1.jpg">
+                <img src="pmQDwbHgLiqugNziFXwB6vSmoge7sdTTAYAwh0TK (1).png">
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolorem perspiciatis, distinctio in odio numquam rerum illo pariatur quasi voluptatum error, ex rem quisquam sed ratione! Sint quia neque at.</p>
-                    <h3>chris barkley</h3>
+                    <p>"Na vybudovanie reputácie je potrebných 20 rokov a len pár minút cyber-incidentu ju môže zničiť."</p>
+                    <h3>Stephane Nappo, Vice president CISO</h3>
                 </div>
             </div>
 
             <div class="test-rol">
-                <img src="eduford_img/user2.jpg">
+                <img src="download.jpg">
                 <div>
-                    <p>Lorem ipsum dolor sit amet coznsectetur adipisicing elit. Necessitatibus dolorem perspiciatis, distinctio in odio numquam rerum illo pariatur quasi voluptatum error, ex rem quisquam sed ratione! Sint quia neque at.</p>
-                    <h3>david byer</h3>
+                    <p>"Existujú len dva typy organizácií: Tie, ktoré boli hacknuté, a tie, ktoré o tom ešte nevedia!"</p>
+                    <h3>John Chambers, CISCO CEO</h3>
                 </div>
             </div>
         </div>
@@ -266,14 +302,15 @@
 
     <!-- ------footer---- -->
     <section class="footer">
-        <h4>About me</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Modi illo voluptas voluptates voluptatem impedit exercitationem esse suscipit earum odio, repellendus rerum non distinctio ipsa expedita labore vitae sequi porro animi.
-        </p>
+        <h4>O mne</h4>
+        <p>Volám sa Adela Bežová, som študentka GĽŠTN a túto stránku som vytvorila v rámci ročníkového projektu z informatiky.</p>
+        <p>máj 2024</p>
         <div class="icon">
-            <a href="https://www.facebook.com/adel.bezova/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com/adelle42862389"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/adela_bezova/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/adela-bezova-085b4b286/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/adel.bezova/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/adelle42862389" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adela_bezova/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adela-bezova-085b4b286/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/adelbezova/" target="_blank"><i class="fa-brands fa-github"></i></a>
 
         </div>
 
@@ -286,7 +323,7 @@
 
 
     <!-- ------JavaScript for menu----- -->
-    <script>
+    <script>https://github.com/adelbezova?tab=followers
         var navlinks = document.getElementById("navlinks")
         function showMenu(){
             navlinks.style.right = "0"
@@ -296,11 +333,11 @@
         }
 
         function scrollToSection() {
-            var section = document.getElementById("course");
+            var section = document.getElementById("concept");
             var targetY = section.getBoundingClientRect().top + window.pageYOffset;
             var startingY = window.pageYOffset;
             var distance = targetY - startingY;
-            var duration = 1000; // časový interval v milisekundách
+            var duration = 200; 
             var startTime;
 
             function ease(t) {

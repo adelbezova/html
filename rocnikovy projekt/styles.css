@@ -73,7 +73,7 @@ nav img{
 
 .text-box p{
     margin: 10px 0 40px;
-    font: 14px;
+    font: 20px;
     color: #fff;
 }
 
@@ -138,12 +138,17 @@ nav .fa{
 }
 
 
-/* ----curse----- */
-.course{
+
+/* concept */
+
+.concept{
     width: 90%;
     margin: auto;
     text-align: center;
-    padding: 100px;
+    padding-top: 50px;
+
+    padding-right: 100px;
+    padding-left: 100px;
 }
 h1{
     font-size: 36px;
@@ -153,7 +158,50 @@ h1{
 
 p{
     color: #777;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/* ul{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+} */
+
+.concept-ol-ul{
+    flex-basis: 10%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+
+
+
+/* ----curse----- */
+.course{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+p{
+    color: #777;
+    font-size: 20px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -176,7 +224,7 @@ p{
 
 ul{
     color: #777;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -216,7 +264,7 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px;
 
 }
 .campus-rol{
@@ -254,7 +302,7 @@ h3{
     width: 100%;
     font-weight: 500;
     color: #fff;
-    font-size: 5vh;
+    font-size: 4.5vh;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%), translateY(0%);
@@ -272,7 +320,7 @@ h3{
     width: 100%;
     font-weight: 500;
     color: #fff;
-    font-size: 3.5vh;
+    font-size: 3vh;
     bottom: 0;
     left: 50%;
     position: flex;
@@ -295,6 +343,18 @@ h3{
 
 }
 
+ol{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.njacastejsie li{
+    margin-top: 10px;
+}
+
 
 
 /* ------priciny---- */
@@ -302,7 +362,7 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 100px;
+    padding: 50px;
 }
 .facil-col{
     flex-basis: 31%;
@@ -327,7 +387,7 @@ h3{
 .test{
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
 }
 .test-rol{
@@ -416,11 +476,255 @@ h3{
 
 p{
     color: #777;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
+
+
+/* BEZPECNOSTNY PROJEKT */
+.headerBP{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(c494f17f1bb1788cba98ab573064cee0.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.tex-kBP{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 70px;
+}
+
+p{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+.layer2 li{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 5px;
+}
+
+.course2{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.row3{
+    margin-top: -1%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.curse-col2{
+    flex-basis: 40%;
+    height:initial;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+    
+}
+
+ul{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.curse-ol-ul2{
+    flex-basis: 10%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.curse-col2:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+    .curse-col2{
+        flex-basis: 45%;
+        height: initial;
+        background-color: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+}
+
+
+
+/* ZALOHOVANIE */
+.metodyZAL{
+    padding-bottom: 70px;
+}
+.text-zal{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.slider{
+    width: 80%;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 250px;
+    background-color: #fff3f3;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.slider2{
+    height: 210px;
+    background-color: #fff;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.ulZAL{
+    margin: 0 auto;
+    width: 70%;
+}
+.butt-left{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff3f3;
+    border: 3px solid #fff3f3;
+    color: #f44336;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    float: left;
+    
+    top: 100px;
+    left: -35px;
+    
+
+    
+}
+
+.butt-left:hover{
+    background-color: #f44336;
+    border: 3px solid #f44336;
+    color: #fff3f3;
+}
+
+.butt-right{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff3f3;
+    border: 3px solid #fff3f3;
+    color: #f44336;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    float: right;
+    top: 100px;
+   right: -35px;
+    
+}
+
+.butt-right:hover{
+    background-color: #f44336;
+    border: 3px solid #f44336;
+    color: #fff3f3;
+}
+
+
+.meida{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 50px;
+}
+
+.ZALrows{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.medium{
+    height: 30vh;
+    width: 30vh;
+    border: 2px black solid;
+}
+
+
+
+
+
 
 
 
